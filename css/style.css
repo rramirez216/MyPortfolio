@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 html {
     font-size: 100%;
@@ -10,23 +9,28 @@ body {
     padding: 0px;
     min-height: 100vh;
     font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
-    color: #fff;
+    color: #000;
 }
 
 /* *, *::before, *::after {
     box-sizing: inherit;
 } */
 
-/* Navigation Styles */
+/************ Navigation Styles ****************/
+
+
+
+
 nav ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
+    font-size: 1.25em;
 }
 
 nav {
     padding: 10px;
-    background-color: #6d8b70;
+    /* background-color: #6d8b70; */
     position: fixed;
     width: 100%;
     @media (min-width: 600px){
@@ -37,13 +41,14 @@ nav {
 a {
     text-decoration: none;
     /* color: #0E7A56; */
-    color: #fff;
+    color: #6d8b70;
     padding: .5px 15px .5px;
 }
 
 a:hover { 
     /* color: rgba(11,92,104,1); */
     color: #fff;
+    background-color: #A1B5A3;
 }
 
 li:last-child {
@@ -51,7 +56,7 @@ li:last-child {
 }
 
 li {
-    border-right: 1px white solid;
+    border-right: 1px #6d8b70 solid;
 }
 
 .flexbox {
@@ -60,7 +65,10 @@ li {
     justify-content: center;
 }
 
-/* Home Styles */
+/********* Home Styles *******************/
+
+
+
 
 .home-h1 {
     font-size: 3em;
@@ -116,3 +124,29 @@ li {
 } */
 
 
+/******** About Me **********/
+
+.about-me-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+    align-items: center;
+}
+
+.about-content {
+    width: 100%;
+    height: 75vh;
+}
+
+.skills {
+    width: 100%;
+    height: 25vh;
+    background-color: #6d8b70;
+}
+
+.about-me-img {
+    width: 25%;
+    height: auto;
+}
