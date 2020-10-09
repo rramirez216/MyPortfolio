@@ -138,15 +138,28 @@ li {
 .about-content {
     width: 100%;
     height: 75vh;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.about-text {
+    max-width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.about-img-div {
+max-width: 50%;
+}
+
+.about-me-img {
+    max-width: 100%;
+    height: auto;
 }
 
 .skills {
     width: 100%;
     height: 25vh;
     background-color: #6d8b70;
-}
-
-.about-me-img {
-    width: 25%;
-    height: auto;
 }
